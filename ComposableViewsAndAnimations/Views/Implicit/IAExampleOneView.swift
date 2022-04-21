@@ -47,7 +47,6 @@ struct IAExampleOneView: View {
                     // change is animated or not.
                     // When useAnimation is true, the default animation effect will be used.
                     // When useAnimation is false, there will be no animation.
-//                    .animation(useAnimation ? .default : .none)
                 
                 Spacer()
                 

@@ -27,8 +27,12 @@ struct ExerciseTwoView: View {
             VStack {
 
                 Circle()
+                    .onTapGesture {
+                        
+                    
                     .frame(width: 200, height: 200)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Double.random(in: ))
+                    }
                 
             }
             .navigationTitle("Exercise 2")
