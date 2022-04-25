@@ -19,6 +19,7 @@ struct ExerciseOneView: View {
     @State private var useAnimation = false
     @State private var col: Color = .red
     @State private var size: CGFloat = 200.0
+    @State private var scaleEffect: CGFloat = 1.0
 
     // MARK: Computed properties
 
@@ -29,9 +30,15 @@ struct ExerciseOneView: View {
             VStack {
 
                 Circle()
+                    .scaleEffect(scaleEffect)
+                    .animation(.default)
                     .frame(width: size, height: size)
+                    .animation(.default)
                     .onTapGesture {
-                        size = size - 10
+                        scaleEffect = 2.0
+                    }
+                    .onTapGesture {
+                        size = size - 50
                     }
                    
                 
