@@ -18,6 +18,7 @@ struct ExerciseOneView: View {
     // Whether to apply the animation
     @State private var useAnimation = false
     @State private var col: Color = .red
+    @State private var size: CGFloat = 200.0
 
     // MARK: Computed properties
 
@@ -28,28 +29,10 @@ struct ExerciseOneView: View {
             VStack {
 
                 Circle()
-                NavigationView {
-                    
-                  
-                            
-                            .scaleEffect(useAnimation)
-                            .foregroundColor(.blue)
-                            .onTapGesture {
-                                if scaleFactor > 0.2 {
-                                    
-                                    scaleFactor -= 0.1
-                                } else {
-                                    
-            scaleFactor = 1
-                                    
-                col = Color(hue: Double.random(in: 1...360/ 360.0,
-                        saturation: 0.8,
-                        brightness: 0.8)
-                                }
-                
-                            }
-
-                    .frame(width: 200, height: 200)
+                    .frame(width: size, height: size)
+                    .onTapGesture {
+                        size = size - 10
+                    }
                    
                 
             }

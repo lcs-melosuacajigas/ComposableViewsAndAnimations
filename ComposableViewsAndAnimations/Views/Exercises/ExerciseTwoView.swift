@@ -29,9 +29,10 @@ struct ExerciseTwoView: View {
                 Circle()
                     .onTapGesture {
                         
-                    
-                    .frame(width: 200, height: 200)
-                    .foregroundColor(Double.random(in: ))
+//                    .frame(width: 200, height: 200)
+//                    .foregroundColor(Double.random(in: ))
+//                    .saturation(0.8)
+//                    .brightness(0.8)
                     }
                 
             }
