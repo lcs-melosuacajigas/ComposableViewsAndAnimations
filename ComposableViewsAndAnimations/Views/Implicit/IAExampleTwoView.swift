@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct IAExampleTwoView: View {
-    
     // MARK: Stored properties
     
+
     // Controls whether this view is showing or not
     @Binding var showThisView: Bool
     
